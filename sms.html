@@ -1,0 +1,362 @@
+<!-- Empty override file take the place of env/lib/python3.8/site-packages/sphinx_rtd_theme/breadcrumbs.html, which generates the top nav breadcrumbs. -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Utilities for Working with SMS &mdash; schimpy 1.12.2.dev35+ga86de75 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=f476c100"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Model time conversion" href="model_time.html" />
+    <link rel="prev" title="Preprocessing" href="preprocessing.html" />
+    <link href="_static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html">
+            
+              <img src="_static/dwr_logo_small.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spatial.html">Spatial data in SCHISM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working with SMS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#converting-an-sms-mesh-2dm-file-to-gr3">Converting an SMS mesh (2dm) file to gr3</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#convert-mesh">convert_mesh</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#convert-mesh">convert_mesh</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-sms-polygons-for-preprocessor">Getting SMS Polygons for Preprocessor</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#convert-polygons">convert_polygons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#convert-polygons">convert_polygons</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#visualizing-detailed-bathymetry-inside-sms">Visualizing detailed bathymetry inside SMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#clip-dems">clip_dems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#clip-dems">clip_dems</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#stacked-dem-fill">stacked_dem_fill</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#schimpy.stacked_dem_fill-create_arg_parser-positional-arguments">Positional Arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#schimpy.stacked_dem_fill-create_arg_parser-named-arguments">Named Arguments</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="model_time.html">Model time</a></li>
+<li class="toctree-l1"><a class="reference internal" href="depth.html">Populating Elevation/Depth Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hotstart.html">Creating hotstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nudging.html">Creating nudging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="postprocessing.html">Post-processing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Evaluating Model Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="direct_use.html">Using Python Pre-processing Script Programatically</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Module Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license_and_disclaimer.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Project README</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">schimpy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <!-- Empty override file take the place of env/lib/python3.8/site-packages/sphinx_rtd_theme/breadcrumbs.html, which generates the top nav breadcrumbs. -->
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="utilities-for-working-with-sms">
+<h1>Utilities for Working with SMS<a class="headerlink" href="#utilities-for-working-with-sms" title="Link to this heading"></a></h1>
+<p>The preprocessing toolkit has some utilities that can help when working with
+Aquaveo SMS, the main form of mesh generation we use until we are
+able to distrubute a sufficient open source mesh generator.</p>
+<section id="converting-an-sms-mesh-2dm-file-to-gr3">
+<h2>Converting an SMS mesh (2dm) file to gr3<a class="headerlink" href="#converting-an-sms-mesh-2dm-file-to-gr3" title="Link to this heading"></a></h2>
+<p>The script that converts SMS mesh to SCHISM gr3 format is available as a standalone script.</p>
+<section id="convert-mesh">
+<h3>convert_mesh<a class="headerlink" href="#convert-mesh" title="Link to this heading"></a></h3>
+<p>schimpy provides a single conversion utility between sms, shapefiles and SMS 2dm files</p>
+<section id="convert-mesh">
+<h4>convert_mesh<a class="headerlink" href="#convert-mesh" title="Link to this heading"></a></h4>
+<p>Convert a mesh from one format to another. The format is decided by the extensions automatically.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>convert_mesh<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_mesh-input">
+<span class="sig-name descname"><span class="pre">--input</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;input&gt;</span></span><a class="headerlink" href="#cmdoption-convert_mesh-input" title="Link to this definition"></a></dt>
+<dd><p><strong>Required</strong> Input mesh file.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_mesh-output">
+<span class="sig-name descname"><span class="pre">--output</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;output&gt;</span></span><a class="headerlink" href="#cmdoption-convert_mesh-output" title="Link to this definition"></a></dt>
+<dd><p><strong>Required</strong> Output mesh file.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_mesh-crs">
+<span class="sig-name descname"><span class="pre">--crs</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;crs&gt;</span></span><a class="headerlink" href="#cmdoption-convert_mesh-crs" title="Link to this definition"></a></dt>
+<dd><p>CRS string for the projection.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_mesh-h">
+<span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-convert_mesh-h" title="Link to this definition"></a></dt>
+<dd><p>Show this message and exit.</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+<section id="getting-sms-polygons-for-preprocessor">
+<h2>Getting SMS Polygons for Preprocessor<a class="headerlink" href="#getting-sms-polygons-for-preprocessor" title="Link to this heading"></a></h2>
+<p>SMS is able to create mesh coverages that are not mesh generation hints, including
+spatial properties maps whose polygons have &quot;material properties&quot;. If you save the
+coverage as a polygon shapefile, the script can help convert the
+resulting shapefile to the preprocessor yaml format. At the time of writing we do
+not have a tutorial example of this process.</p>
+<section id="convert-polygons">
+<h3>convert_polygons<a class="headerlink" href="#convert-polygons" title="Link to this heading"></a></h3>
+<section id="convert-polygons">
+<h4>convert_polygons<a class="headerlink" href="#convert-polygons" title="Link to this heading"></a></h4>
+<p>Convert SCHISM polygons between YAML and Shapefile formats.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>convert_polygons<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_polygons-h">
+<span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-convert_polygons-h" title="Link to this definition"></a></dt>
+<dd><p>Show this message and exit.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_polygons-input">
+<span class="sig-name descname"><span class="pre">--input</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;input&gt;</span></span><a class="headerlink" href="#cmdoption-convert_polygons-input" title="Link to this definition"></a></dt>
+<dd><p><strong>Required</strong> Input file (YAML or Shapefile).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_polygons-output">
+<span class="sig-name descname"><span class="pre">--output</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;output&gt;</span></span><a class="headerlink" href="#cmdoption-convert_polygons-output" title="Link to this definition"></a></dt>
+<dd><p><strong>Required</strong> Output file (YAML or Shapefile).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-convert_polygons-0">
+<span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-convert_polygons-0" title="Link to this definition"></a></dt>
+<dd><p>Show this message and exit.</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+<section id="visualizing-detailed-bathymetry-inside-sms">
+<h2>Visualizing detailed bathymetry inside SMS<a class="headerlink" href="#visualizing-detailed-bathymetry-inside-sms" title="Link to this heading"></a></h2>
+<p>Earlier versions of SMS had bugs causing incorrect georefercing of DEMs
+and very poor memory management. That is fixed but for efficiency reasons it continues to be impossible to efficiently assign elevations within the software for a large mesh.
+There are several ways of tackling this, which are covered in the Bay-Delta SCHISM
+documentation. Here we have two scripts
+that were designed to help with this problem: <cite>clip_dems.py</cite> and <cite>stacked_dem_fill.py</cite>.</p>
+<section id="clip-dems">
+<h3>clip_dems<a class="headerlink" href="#clip-dems" title="Link to this heading"></a></h3>
+<section id="clip-dems">
+<h4>clip_dems<a class="headerlink" href="#clip-dems" title="Link to this heading"></a></h4>
+<p>Trim each DEM on a prioritized list. The coordinates used for clipping is supplied either directly as an upper left and lower right coordinate or indirectly using the bounding coordinates of a sample image. In practice this script is usually used with images saved from SMS.</p>
+<dl class="simple">
+<dt>Arguments:</dt><dd><p>DEMLIST file containing prioritized (high to low) list of dems.</p>
+</dd>
+</dl>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>clip_dems<span class="w"> </span><span class="o">[</span>OPTIONS<span class="o">]</span><span class="w"> </span>DEMLIST
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-coords">
+<span class="sig-name descname"><span class="pre">--coords</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;coords&gt;</span></span><a class="headerlink" href="#cmdoption-clip_dems-coords" title="Link to this definition"></a></dt>
+<dd><p>Bounding coordinates to which DEMs will be clipped (upper left x, y, lower right x, y).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-image">
+<span class="sig-name descname"><span class="pre">--image</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;infile&gt;</span></span><a class="headerlink" href="#cmdoption-clip_dems-image" title="Link to this definition"></a></dt>
+<dd><p>Image or DEM used to infer bounding coordinates for clipping. Use jpeg for the image. This argument is mutually exclusive with –coords. If a sample is provided its upper left and lower right corner will be used.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-prefix">
+<span class="sig-name descname"><span class="pre">--prefix</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;prefix&gt;</span></span><a class="headerlink" href="#cmdoption-clip_dems-prefix" title="Link to this definition"></a></dt>
+<dd><p>Prefix used for output file names.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-outformat">
+<span class="sig-name descname"><span class="pre">--outformat</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;outformat&gt;</span></span><a class="headerlink" href="#cmdoption-clip_dems-outformat" title="Link to this definition"></a></dt>
+<dd><p>Output format, default is AAIGrid (ArcInfo ASCII).</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-verbose">
+<span class="sig-name descname"><span class="pre">--verbose</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-clip_dems-verbose" title="Link to this definition"></a></dt>
+<dd><p>Enable verbose output.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-hshift">
+<span class="sig-name descname"><span class="pre">--hshift</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-clip_dems-hshift" title="Link to this definition"></a></dt>
+<dd><p>(Deprecated) Shift DEM by half cell for applications that incorrectly interpret the location of the origin and data centering of a DEM. This is a bug fix for SMS &lt; 11.1</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-h">
+<span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-clip_dems-h" title="Link to this definition"></a></dt>
+<dd><p>Show this message and exit.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-clip_dems-arg-DEMLIST">
+<span class="sig-name descname"><span class="pre">DEMLIST</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-clip_dems-arg-DEMLIST" title="Link to this definition"></a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</section>
+<p>The script clip_dems.py is used to create mini-DEMs on the fly that are small
+enough to be brought into the SMS environment as rasters without slowing it down too much.
+The same The <a class="reference internal" href="preprocessing.html#dem-list-file"><span class="std std-ref">DEM List File</span></a> is used here as elsewhere in the pre-processor.</p>
+<p>The normal pattern of work is to zoom into the area of interst in SMS, save the
+work area as a jpeg image and use it as the <cite>image</cite> argument to <cite>clip_dems.py</cite>.
+One cut DEM will be produced for each DEM on the <cite>dem_list</cite> file that intersects the
+work area, using file names in order of priority (0 highest). The cut DEMs would then
+be imported and visualized in SMS, ideally using contours as the
+viewing choice and a carefully crafted color map designed to focus on the
+elevations that are locally most important.</p>
+</section>
+<section id="stacked-dem-fill">
+<h3>stacked_dem_fill<a class="headerlink" href="#stacked-dem-fill" title="Link to this heading"></a></h3>
+<p>The script stacked_dem_fill.py is the one we use to populate a mesh with elevations.</p>
+<p><p>Fill node elevations in a .2dm SMS mesh or gr3 file using a prioritized list of DEMs.</p>
+</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">stacked_dem_fill</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">elev2depth</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">fill</span> <span class="n">FILL</span><span class="p">]</span> <span class="n">filename</span> <span class="n">demfile</span>
+</pre></div>
+</div>
+<section id="schimpy.stacked_dem_fill-create_arg_parser-positional-arguments">
+<h4>Positional Arguments<a class="headerlink" href="#schimpy.stacked_dem_fill-create_arg_parser-positional-arguments" title="Link to this heading"></a></h4>
+<dl class="option-list">
+<dt><kbd>filename</kbd></dt>
+<dd><p>name of 2dm or gr3 file</p>
+</dd>
+<dt><kbd>demfile</kbd></dt>
+<dd><p>file containing list of DEMs. These can be in any form that gdal accepts, which includes ESRI ascii format and GeoTiffs</p>
+</dd>
+</dl>
+</section>
+<section id="schimpy.stacked_dem_fill-create_arg_parser-named-arguments">
+<h4>Named Arguments<a class="headerlink" href="#schimpy.stacked_dem_fill-create_arg_parser-named-arguments" title="Link to this heading"></a></h4>
+<dl class="option-list">
+<dt><kbd>--elev2depth</kbd></dt>
+<dd><p>Convert elevation to depth by flipping sign. This is typical when using gr3 format, less so with 2dm.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">False</span></code></p>
+</dd>
+<dt><kbd>--fill</kbd></dt>
+<dd><p>Fill value for areas not covered by supplied rasters.</p>
+<p>Default: <code class="docutils literal notranslate"><span class="pre">2.0</span></code></p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="preprocessing.html" class="btn btn-neutral float-left" title="Preprocessing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="model_time.html" class="btn btn-neutral float-right" title="Model time conversion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, California Department of Water Resources.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: white;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #86989B; /* existing theme was AFC1C4 and 86989B and CA7900 and white */
+      
+    }
+  </style>
+
+
+</body>
+</html>

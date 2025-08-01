@@ -1,0 +1,587 @@
+
+Subpackages
+""""""""""""
+
+.. toctree::
+
+   schimpy.util
+
+Modules
+"""""""""""
+
+schimpy.base\_io module
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.base_io
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.batch\_metrics module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.batch_metrics
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.bctide module
+~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.bctide
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.bound\_linear module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.bound_linear
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.cencoos\_download module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.cencoos_download
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.check\_mesh\_skewness module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.check_mesh_skewness
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.clip\_dems module
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.clip_dems
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.combine\_consume module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.combine_consume
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.combine\_flux module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.combine_flux
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.contour\_smooth module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.contour_smooth
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.convert\_linestrings module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.convert_linestrings
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.convert\_mesh module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.convert_mesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.convert\_points module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.convert_points
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.convert\_polygons module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.convert_polygons
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.convert\_sav\_class\_to\_number module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.convert_sav_class_to_number
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.create\_mesh\_n\_levels module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.create_mesh_n_levels
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.create\_vgrid\_lsc2 module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.create_vgrid_lsc2
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.cruise module
+~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.cruise
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.cut\_mesh module
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.cut_mesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.download\_hrrr module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.download_hrrr
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.embed\_raster module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.embed_raster
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.gaussian\_quadrature module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.gaussian_quadrature
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.gen\_elev2d module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.gen_elev2d
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.geo\_tools module
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.geo_tools
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.gr3 module
+~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.gr3
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.grid\_opt module
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.grid_opt
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.hotstart\_inventory module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.hotstart_inventory
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.hrr3 module
+~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.hrr3
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.interp\_2d module
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.interp_2d
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.interpolate\_structure module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.interpolate_structure
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.laplace\_smooth\_data module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.laplace_smooth_data
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.lsc2 module
+~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.lsc2
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.material\_poly module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.material_poly
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.merge\_th module
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.merge_th
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.metricsplot module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.metricsplot
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.model\_time module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.model_time
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.nml module
+~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.nml
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.nudging module
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.nudging
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.param module
+~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.param
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.params module
+~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.params
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.plot\_default\_formats module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.plot_default_formats
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.prepare\_schism module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.prepare_schism
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.priority\_queue module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.priority_queue
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.profile\_plot module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.profile_plot
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.raster\_to\_nodes module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.raster_to_nodes
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.read\_output\_xyt module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.read_output_xyt
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_hotstart module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_hotstart
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_input module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_input
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_linestring module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_linestring
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_mesh module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_mesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_polygon module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_polygon
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_setup module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_setup
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_source module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_source
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_sources\_sinks module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_sources_sinks
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_structure module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_structure
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_vertical\_mesh module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_vertical_mesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.schism\_yaml module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.schism_yaml
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.separate\_species module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.separate_species
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.simulation\_timing module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.simulation_timing
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.small\_areas module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.small_areas
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.sms2gr3 module
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.sms2gr3
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.split\_quad module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.split_quad
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.stacked\_dem\_fill module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.stacked_dem_fill
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.station module
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.station
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.subset\_schism\_output module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.subset_schism_output
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.th\_calcs module
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.th_calcs
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.three\_point\_linear\_norm module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.three_point_linear_norm
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.trimesh module
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.trimesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.triquadmesh module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.triquadmesh
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.unit\_conversions module
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.unit_conversions
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.vgrid\_opt2 module
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.vgrid_opt2
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+schimpy.write\_ts module
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. automodule:: schimpy.write_ts
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
